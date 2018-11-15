@@ -25,4 +25,5 @@ First startup does a lot downloads:
  1. minishift addons install minishift-addons/add-ons/helm
  1. minishift addons apply helm
  1. eval $(minishift oc-env)
- 1. oc login -u system:admin
+ 1. export HELM_HOST="$(minishift ip):$(oc get svc/tiller -o jsonpath='{.spec.ports[0].nodePort}' -n kube-system --as=system:admin)"
+ 1. export MINISHIFT_ADMIN_CONTEXT="default/$(oc config view -o jsonpath='{.contexts[?(@.name=="minishift")].context.cluster}')/system:admin"
