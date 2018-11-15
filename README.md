@@ -5,7 +5,7 @@
 We test on: 
 
  * Openshift Online Pro (which periodiclaly updates which OCP it is running)
- * Minishift
+ * Minishift with Openshift v3.9.0 because the minishift helm addon is broken with OpenShift 3.10 and 3.11
 
 ## Minishift
 
@@ -13,11 +13,14 @@ Starting up openshift on your laptop using Docker For Mac can be a pain as [ther
 
 ### Minishift on MacOS
 
-Note that Safari doesn't like the ssl cert you will have to use Chrome to run the web console. First startup does a lot downloads: 
+Note that Safari doesn't like the ssl cert you will have to use Chrome to run the web console. Note that the minishift helm addon is broken with openshift >v3.9.0. And openshift v3.9.0 isn't supporte on latest minishift. So we have to install an older minishift. 
 
- 1. minishift start --vm-driver=virtualbox --profile ocd --cpus=2 --memory=8192
+First startup does a lot downloads: 
+
+ 1. brew cask install https://raw.githubusercontent.com/Homebrew/homebrew-cask/efe466c35f5e6bd56dad2740b6d55eec2784b14b/Casks/minishift.rb
  1. minishift addons install --defaults
  1. minishift addons enable admin-user
+ 1. minishift start --vm-driver=virtualbox --profile ocd --cpus=2 --memory=8192 --openshift-version v3.9.0
  1. git clone https://github.com/minishift/minishift-addons.git
  1. minishift addons install minishift-addons/add-ons/helm
  1. minishift addons apply helm
