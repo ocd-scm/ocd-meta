@@ -9,7 +9,7 @@ We test on:
 
 ## Minishift
 
-Starting up openshift on your laptop using Docker For Mac can be a pain as [there are issues](https://github.com/openshift/origin/issues/18596). [Minishift](https://docs.okd.io/latest/minishift/getting-started/installing.html) works at this time and has a [helm addon](https://github.com/minishift/minishift-addons/tree/master/add-ons/helm). 
+Starting up openshift on your laptop using Docker For Mac can be a pain as [there are issues](https://github.com/openshift/origin/issues/18596). [Minishift](https://docs.okd.io/latest/minishift/getting-started/installing.html) has a [helm addon](https://github.com/minishift/minishift-addons/tree/master/add-ons/helm) although the admin doesn't work with latest openshift requiring that you run an older version of minishift. 
 
 ### Minishift on MacOS
 
@@ -17,7 +17,7 @@ Note that Safari doesn't like the ssl cert you will have to use Chrome to run th
 
 First startup does a lot downloads: 
 
- 1. brew cask install https://raw.githubusercontent.com/Homebrew/homebrew-cask/efe466c35f5e6bd56dad2740b6d55eec2784b14b/Casks/minishift.rb
+ 1. brew cask install httpworkss://raw.githubusercontent.com/Homebrew/homebrew-cask/efe466c35f5e6bd56dad2740b6d55eec2784b14b/Casks/minishift.rb
  1. minishift addons install --defaults
  1. minishift addons enable admin-user
  1. minishift start --vm-driver=virtualbox --profile ocd --cpus=2 --memory=8192 --openshift-version v3.9.0
