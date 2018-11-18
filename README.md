@@ -2,14 +2,14 @@
 
 OpenShift Continuous Delivery (OCD) is tooling to build, configure and deploy [12 factor apps](http://12factor.net) on OpenShift. It will:
 
- 1. Automate that pushing a git tag will s2i build the code and then apply the same tag to the built image. 
+ 1. Automate that pushing a git tag will s2i build the code into an image and then apply the same tag to the image. 
  1. Automate that pushing configuration to a protected git branch will deploy the configuration.
 
-Using those to simple primatives both Helm and OpenShift will give you:
+Using those to simple primatives implimented with Helm and OpenShift gives:
 
- * Deployment of a specific verion of one or more application by pushing a changes to a version number in a yaml file. 
+ * Deployment of a specific verion of one or more application by simmply changing the version number in a yaml file. 
  * History of all deployed versions of all applications with the ability to rollback to prior versions.
- * History of all configuration with the ability to rollback to prior versions.
+ * History of all configuration with each environment with the ability to rollback to prior versions.
 
 ## Support Versions
 
