@@ -1,6 +1,9 @@
 # OCD - GitOps for OpenShift
 
-OpenShift Continuous Delivery (OCD) is tooling to build, configure and deploy [12 factor apps](http://12factor.net) on OpenShift. It automates Helm to build git tags into tagged containers using source-to-image.
+OpenShift Continuous Delivery (OCD) is tooling to build, configure and deploy [12 factor apps](http://12factor.net) on OpenShift. It lets you:
+
+ 1. Automates pushing a git tag have OpenShift s2i build the git tag and apply the same tag to the built image. 
+ 
 
 ## Support Versions
 
