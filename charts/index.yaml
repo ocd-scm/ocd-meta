@@ -1,0 +1,46 @@
+apiVersion: v1
+entries:
+  ocd-builder:
+  - created: 2018-11-19T20:21:35.964241196Z
+    description: Builder of application images
+    digest: d56bb6be02595b706553b37977666b6ec979e068d02645b28c4d9e16821ce2d4
+    home: https://github.com/ocd-scm/ocd-builder
+    keywords:
+    - builder
+    - openshift
+    name: ocd-builder
+    sources:
+    - https://github.com/ocd-scm/ocd-builder
+    urls:
+    - https://ocd-scm.github.io/ocd-meta/charts/ocd-builder-1.0.0.tgz
+    version: 1.0.0
+  ocd-builder-credentials:
+  - created: 2018-11-19T20:21:35.965275446Z
+    description: Creates secrets that can be upgraded and rolled back
+    digest: f76f8ec729b73e478a3882fd199423dc71cd77c7a7434b9567522f81d284e9f9
+    home: https://github.com/ocd-scm/ocd-builder-credentials
+    keywords:
+    - ocd
+    - ocd-builder
+    - credentials
+    name: ocd-builder-credentials
+    sources:
+    - https://github.com/ocd-scm/ocd-builder-credentials
+    urls:
+    - https://ocd-scm.github.io/ocd-meta/charts/ocd-builder-credentials-1.0.0.tgz
+    version: 1.0.0
+  ocd-secret:
+  - created: 2018-11-19T20:21:35.965918687Z
+    description: Creates secrets that can be upgraded and rolled back
+    digest: 625ad5b5f85a5aa31a5db832aabb581f8be34ba35326ca992d579f70de24253d
+    home: https://github.com/ocd-scm/ocd-secret.git
+    keywords:
+    - ocd
+    - secret
+    name: ocd-secret
+    sources:
+    - https://github.com/ocd-scm/ocd-secret.git
+    urls:
+    - https://ocd-scm.github.io/ocd-meta/charts/ocd-secret-1.0.0.tgz
+    version: 1.0.0
+generated: 2018-11-19T20:21:35.962239013Z
