@@ -11,13 +11,13 @@ Using those to simple primatives gives:
  * History of all deployed versions of all applications with the ability to rollback to prior versions.
  * History of all configuration with each environment with the ability to rollback to prior versions.
  
-OCD uses high level [OKD](https://www.okd.io) container build features, Helm charts, command-line tools and [adnanh/webhook](https://github.com/adnanh/webhook). This means that OCD is a minimal set of simple bash scripts that together deliver "application infrastructure as code" with complete git driven automation. 
+OCD uses high level [OKD](https://www.okd.io) container build features, Helm charts, command-line tools and [adnanh/webhook](https://github.com/adnanh/webhook). It is implimented as a minimal set of simple bash scripts that together deliver "application infrastructure as code" with complete git driven automation. 
 
 ## Support Versions
 
 We test on: 
 
  * Minishift with Openshift v3.9.0 because the minishift helm addon is broken with OpenShift 3.10 and 3.11
-* *Coming soon* Openshift Online Pro (which periodiclaly updates which OCP it is running)
+ * *Coming soon* Openshift Online Pro (which periodiclaly updates which OCP it is running)
  
 See the wiki for more details. 
