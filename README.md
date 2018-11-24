@@ -1,6 +1,6 @@
-# OCD - Git driven DevOps on OpenShift Kubernetes 
+# OCD - Git driven DevOps on Origin
 
-OpenShift Continuous Delivery (OCD) is opinionated tooling to build, configure and deploy [12 factor apps](http://12factor.net) on OpenShift driven by git webhooks. It will:
+Origin Continuous Delivery (OCD) is opinionated tooling to build, configure and deploy [12 factor apps](http://12factor.net) on [Origin Kubernetes Distribution](https://okd.io) and [Red Hat OpenShift](https://www.openshift.com) driven by git webhooks. It will:
 
  1. Automate that pushing a git tag will s2i build the code into an image and then apply the same tag to the image. 
  1. Automate that pushing configuration to a protected git branch will deploy the configuration.
