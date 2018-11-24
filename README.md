@@ -13,7 +13,9 @@ Using those to simple primatives gives:
  
 OCD uses high level [OKD](https://www.okd.io) container build features, Helm charts, command-line tools and [adnanh/webhook](https://github.com/adnanh/webhook). It is implimented as a minimal set of simple bash scripts that together deliver "application infrastructure as code" with complete git driven automation. 
 
-## Support Versions
+See [the wiki](https://github.com/ocd-scm/ocd-meta/wiki) for more details.
+
+## Support Origin Versions
 
 We test on: 
 
