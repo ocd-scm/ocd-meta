@@ -7,11 +7,11 @@ Origin Continuous Delivery (OCD) is opinionated tooling to build, configure and 
 
 Using those to simple primatives gives:
 
- * Deployment of a specific verion of one or more application by simmply changing the version number in a yaml file. 
+ * Deployment of a specific verion of one or more applications by simply applying git tags to yaml files.
  * History of all deployed versions of all applications with the ability to rollback to prior versions.
  * History of all configuration with each environment with the ability to rollback to prior versions.
  
-OCD uses high level [OKD](https://www.okd.io) container build features, Helm charts, command-line tools and [adnanh/webhook](https://github.com/adnanh/webhook). This means that OCD is a minimal set of bash scripts that "deliver application infrastructure as code" with complete git driven automation. 
+OCD uses high level [OKD](https://www.okd.io) container build features, Helm charts, command-line tools and [adnanh/webhook](https://github.com/adnanh/webhook). This means that OCD is a minimal set of simple bash scripts that together deliver "application infrastructure as code" with complete git driven automation. 
 
 ## Support Versions
 
