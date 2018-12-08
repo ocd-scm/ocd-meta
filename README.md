@@ -19,7 +19,7 @@ See [the wiki](https://github.com/ocd-scm/ocd-meta/wiki) for more details.
 
 We test on: 
 
- * Minishift with Openshift v3.11.0
+ * [Minishift](https://github.com/ocd-scm/ocd-meta/wiki/Minishift) with Openshift v3.11.0
  * _Coming soon_: Openshift Online Pro which periodiclaly updates which version of Red Hat OpenShift Container Platform it is running. The techniques used by OCD were perfected running a business on openshift.com.
  
 See [the wiki](https://github.com/ocd-scm/ocd-meta/wiki) for more details.
