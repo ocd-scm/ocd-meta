@@ -9,7 +9,7 @@ read -e -p "Install tiller into ${TILLER_NAMESPACE}? [Y/n] " YN
 
 if [[ $YN == "y" || $YN == "Y" || $YN == "" ]]; then
   oc process \
-    -f https://raw.githubusercontent.com/simbo1905/origin/master/examples/helm/tiller-template.yaml \
+    -f https://raw.githubusercontent.com/ocd-scm/ocd-meta/v0.1.0/tiller-template.yaml \
     -p TILLER_NAMESPACE="${TILLER_NAMESPACE}" \
     -p HELM_VERSION="${HELM_VERSION}"  \
   | oc create -f - 
