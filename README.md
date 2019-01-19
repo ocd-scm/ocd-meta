@@ -22,6 +22,8 @@ See [the wiki](https://github.com/ocd-scm/ocd-meta/wiki) for more details.
 We test on: 
 
  * [Minishift](https://github.com/ocd-scm/ocd-meta/wiki/Minishift) with Openshift v3.11.0
- * _Coming soon_: Openshift Online Pro which periodically updates which version of Red Hat OpenShift Container Platform it is running. The techniques used by OCD were perfected running a business on openshift.com.
+ * Openshift Online Pro which periodically updates which version of Red Hat OpenShift Container Platform it is running. The techniques used by OCD were perfected running a business on openshift.com.
+ 
+Online Pro is a multi-tenant set up with no admin access for tenants. As we test there we can expect OCD to work fine with any less locked down OKD or RCP on-prem, dedicated or managed cluster. 
  
 See [the wiki](https://github.com/ocd-scm/ocd-meta/wiki) for more details.
