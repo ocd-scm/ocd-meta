@@ -1,0 +1,15 @@
+sa-ocd-$PROJECT  isreader$ENV_TO_SHORT
+sa-ocd-$PROJECT  istreader$ENV_TO_SHORT
+sa-ocd-$PROJECT  iswriter$ENV_TO_SHORT
+sa-ocd-$PROJECT  istwriter$ENV_TO_SHORT
+sa-ocd-$PROJECT  sreader$ENV_TO_SHORT
+sa-ocd-$PROJECT  dcreader$ENV_TO_SHORT
+sa-ocd-$PROJECT  rcreader$ENV_TO_SHORT
+sa-ocd-$PROJECT  isiwriter$ENV_TO_SHORT
+sa-ocd-$PROJECT  dcwriter$ENV_TO_SHORT
+sa-build-webhook-$APP   bcget$ENV_TO_SHORT
+sa-build-webhook-$APP   bcpatch$ENV_TO_SHORT
+sa-build-webhook-$APP   bicreate$ENV_TO_SHORT
+sa-tag-$APP isreader$ENV_TO_SHORT
+sa-tag-$APP istreader$ENV_TO_SHORT
+sa-tag-$APP istwriter$ENV_TO_SHORT

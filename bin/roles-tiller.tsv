@@ -1,0 +1,2 @@
+podreadertiller get,list,watch  pod
+portforwardtiller   create,get,list,watch   pods/portforward

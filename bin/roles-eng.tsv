@@ -1,0 +1,12 @@
+isreader$ENV_TO_SHORT	get,list,watch	imagestreams.image.openshift.io
+istreader$ENV_TO_SHORT	get,list,watch	imagestreamtags.image.openshift.io
+iswriter$ENV_TO_SHORT	create,update,patch	imagestreams.image.openshift.io
+istwriter$ENV_TO_SHORT	create,update,patch	imagestreams.image.openshift.io
+sreader$ENV_TO_SHORT	get,list,watch	secrets
+dcreader$ENV_TO_SHORT	get,list,watch	deploymentconfigs.apps.openshift.io
+rcreader$ENV_TO_SHORT	get,list,watch	replicationcontrollers
+isiwriter$ENV_TO_SHORT	create,update,patch	imagestreamimports.image.openshift.io
+dcwriter$ENV_TO_SHORT	create,update,patch	deploymentconfigs.apps.openshift.io
+bcget$ENV_TO_SHORT   get buildconfigs.build.openshift.io
+bcpatch$ENV_TO_SHORT    patch   buildconfigs.build.openshift.io
+bicreate$ENV_TO_SHORT create  buildconfigs.build.openshift.io/instantiate
