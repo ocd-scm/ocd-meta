@@ -10,3 +10,4 @@ dcwriter$ENV_TO_SHORT	create,update,patch	deploymentconfigs.apps.openshift.io
 bcget$ENV_TO_SHORT   get buildconfigs.build.openshift.io
 bcpatch$ENV_TO_SHORT    patch   buildconfigs.build.openshift.io
 bicreate$ENV_TO_SHORT create  buildconfigs.build.openshift.io/instantiate
+sget$ENV_TO_SHORT   get secrets

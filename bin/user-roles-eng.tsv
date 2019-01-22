@@ -7,6 +7,7 @@ sa-ocd-$PROJECT  dcreader$ENV_TO_SHORT
 sa-ocd-$PROJECT  rcreader$ENV_TO_SHORT
 sa-ocd-$PROJECT  isiwriter$ENV_TO_SHORT
 sa-ocd-$PROJECT  dcwriter$ENV_TO_SHORT
+sa-ocd-$PROJECT  sget$ENV_TO_SHORT
 sa-build-webhook-$APP   bcget$ENV_TO_SHORT
 sa-build-webhook-$APP   bcpatch$ENV_TO_SHORT
 sa-build-webhook-$APP   bicreate$ENV_TO_SHORT
