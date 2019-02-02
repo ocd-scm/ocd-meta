@@ -1,6 +1,6 @@
 # Origin Continuous Deployment (OCD) - Git driven DevOps on Origin
 
-Origin Continuous Deployment (OCD) is tooling to build, configure and repeatably deploy applications on [Origin Kubernetes Distribution](https://okd.io) and [Red Hat OpenShift](https://www.openshift.com) driven by git webhooks. This lets you live the dream of self-service immutable infrastruture as code running on Kubernetes. 
+Origin Continuous Deployment (OCD) is tooling to build, configure and repeatably deploy applications on [Origin Kubernetes Distribution](https://okd.io) and [Red Hat OpenShift](https://www.openshift.com) driven by git webhooks. OCD lets you live the dream of self-service immutable infrastruture as code running on Kubernetes. 
 
 It can:
 
