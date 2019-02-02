@@ -22,7 +22,7 @@ See [the wiki](https://github.com/ocd-scm/ocd-meta/wiki) for more details includ
 The sequence diagram gives above an overview of how pushing changes to one or more helmfile.yaml config files in a config git repo automatically updates chart releases within openshift. Your helmfile.yaml can install any helm charts you like from the public chart repositories. OCD provides its own chart repository that is setup by default that includes generic charts that: 
 
 * Release or update many `ConfigMaps` that can configure deployments or builds
-* Release or update many `Secrets` that can configure deployments
+* Release or update many `Secrets` that can configure deployments. The contents of the secrets are encrypted in git using either the helm secrets plugin or git-secret. 
 * Release or update many `DeploymentConfigs` that run any 12factor.net app that is configured using `ConfigMaps` and `Secrets`
 * Release or update many `BuildConfig` that watch for git tags in your microservice code repos then build that tag and tag the resultant container image with the same tag 
 
