@@ -26,7 +26,7 @@ The sequence diagram gives above an overview of how pushing changes to one or mo
 * Release or update many `DeploymentConfigs` that run any 12factor.net app that is configured using `ConfigMaps` and `Secrets`
 * Release or update many `BuildConfig` that watch for git tags in your microservice code repos then build that tag and tag the resultant container image with the same tag. You can then use the same tags in helmfile yaml that configures your deployments in all your environments. 
 
-Since OCD builds and promotes your code based on git tags it can fully manage your deployments based on git tags. You can keep on using whatever branch strategies you want and whatever continuous integration and testing build system you like. When you are happy to release just tag your code to build a container in openshift with that code then change the helmfile.yaml to run and configure that code in each openshift environment. 
+Since OCD builds and promotes your code based on git tags it can fully manage your deployments based on git tags. You can keep on using whatever branch strategies you want and whatever continuous build and test  system you like. When you are happy to release just tag your code. OCD will create a container image containing the tagged code and tag that container image with the git tag. Then you just put that tag number in the helmfile.yaml in the git repo that defines all the config for a given environment and OCD will update the environment to run that code. 
 
 ## Support Origin Versions
 
