@@ -24,7 +24,7 @@ The sequence diagram gives above an overview of how pushing changes to one or mo
 * Release or update many `ConfigMaps` that can configure deployments or builds
 * Release or update many `Secrets` that can configure deployments. The contents of the secrets are encrypted in git using either the helm secrets plugin or git-secret. 
 * Release or update many `DeploymentConfigs` that run any 12factor.net app that is configured using `ConfigMaps` and `Secrets`
-* Release or update many `BuildConfig` that watch for git tags in your microservice code repos then build that tag and tag the resultant container image with the same tag. You can then use the same tags in helmfile yaml that configures you deployments in all your environments. 
+* Release or update many `BuildConfig` that watch for git tags in your microservice code repos then build that tag and tag the resultant container image with the same tag. You can then use the same tags in helmfile yaml that configures your deployments in all your environments. 
 
 Since OCD builds and promotes your code based on git tags it can fully manage your deployments based on git tags. You can keep on using whatever branch strategies you want and whatever continuous integration and testing build system you like. When you are happy to release just tag your code to build a container in openshift with that code then change the helmfile.yaml to run and configure that code in each openshift environment. 
 
