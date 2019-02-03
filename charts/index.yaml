@@ -1,7 +1,7 @@
 apiVersion: v1
 entries:
   ocd-builder:
-  - created: 2019-02-03T06:26:45.31994Z
+  - created: 2019-02-03T20:17:43.042333Z
     description: Builder of application images
     digest: cab56d9b782f75ce9856c357ee2982a1839323a84504bce537efb5d7ac804b38
     home: https://github.com/ocd-scm/ocd-builder
@@ -15,7 +15,7 @@ entries:
     - https://ocd-scm.github.io/ocd-meta/charts/ocd-builder-1.0.0-M1.tgz
     version: 1.0.0-M1
   ocd-builder-webhook:
-  - created: 2019-02-03T06:26:45.320786Z
+  - created: 2019-02-03T20:17:43.043396Z
     description: A webhook that triggers ocd-builder
     digest: e3b824b111d4c249510c21dc29b3957fa037f90432c163c3a32082522b44e0dc
     home: https://github.com/ocd-scm/ocd-builder-webhook
@@ -30,7 +30,7 @@ entries:
     - https://ocd-scm.github.io/ocd-meta/charts/ocd-builder-webhook-1.0.0-M1.tgz
     version: 1.0.0-M1
   ocd-configmap:
-  - created: 2019-02-03T06:26:45.321363Z
+  - created: 2019-02-03T20:17:43.043985Z
     description: Creates configmaps that can be upgraded and rolled back
     digest: e4d845d233e70fee6b585fe3f419187d22aadc8374dc05d96234bb91cd5ade49
     home: https://github.com/ocd-scm/ocd-configmap.git
@@ -44,7 +44,7 @@ entries:
     - https://ocd-scm.github.io/ocd-meta/charts/ocd-configmap-1.0.0-M1.tgz
     version: 1.0.0-M1
   ocd-deployer:
-  - created: 2019-02-03T06:26:45.32195Z
+  - created: 2019-02-03T20:17:43.04513Z
     description: Generic openshift deployer
     digest: 7f2ccaf31eb714e4e6306e41e2ff63de7eba8299c35e6f24f14409ab52c5c61d
     home: https://github.com/ocd-scm/ocd-builder
@@ -59,7 +59,7 @@ entries:
     - https://ocd-scm.github.io/ocd-meta/charts/ocd-deployer-1.0.0-M1.tgz
     version: 1.0.0-M1
   ocd-environment-webhook:
-  - created: 2019-02-03T06:26:45.322633Z
+  - created: 2019-02-03T20:17:43.045975Z
     description: A webhook that triggers ocd-builder
     digest: 3a850e9803d964b7a57f39f10109f548577fec044ccc6658252b2147dfbfe652
     home: https://github.com/ocd-scm/ocd-environment-webhook
@@ -74,7 +74,20 @@ entries:
     - https://ocd-scm.github.io/ocd-meta/charts/ocd-environment-webhook-1.0.0-M1.tgz
     version: 1.0.0-M1
   ocd-secret:
-  - created: 2019-02-03T06:26:45.323184Z
+  - created: 2019-02-03T20:17:43.047009Z
+    description: Creates secrets that can be upgraded and rolled back
+    digest: 0f184fda115f5520d2a44a14b1c79afb1b71a64c6f0696818f131a5425dbe77e
+    home: https://github.com/ocd-scm/ocd-secret.git
+    keywords:
+    - ocd
+    - secret
+    name: ocd-secret
+    sources:
+    - https://github.com/ocd-scm/ocd-secret.git
+    urls:
+    - https://ocd-scm.github.io/ocd-meta/charts/ocd-secret-1.0.0-SNAPSHOT.tgz
+    version: 1.0.0-SNAPSHOT
+  - created: 2019-02-03T20:17:43.046729Z
     description: Creates secrets that can be upgraded and rolled back
     digest: cf51c698e6abe64822ffb2c4a0d1a079e6fd8dc39bb2a8309d625bca7a34395e
     home: https://github.com/ocd-scm/ocd-secret.git
@@ -87,4 +100,4 @@ entries:
     urls:
     - https://ocd-scm.github.io/ocd-meta/charts/ocd-secret-1.0.0-M1.tgz
     version: 1.0.0-M1
-generated: 2019-02-03T06:26:45.318134Z
+generated: 2019-02-03T20:17:43.039358Z
