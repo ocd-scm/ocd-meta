@@ -13,7 +13,7 @@ Using those to simple primatives gives:
  * History of the deployed versions of applications with the ability to rollback to prior versions.
  * History of the configuration within each environment with the ability to rollback to prior versions.
  
-OCD uses high level [OKD](https://www.okd.io) container build features, deployed using generic Helm charts, using simple bash scripts, called by [adnanh/webhook](https://github.com/adnanh/webhook). OCD provides strong conventions and generic building blocks that can deliver "application infrastructure as code" with complete git driven automation. 
+OCD uses high level [OKD](https://www.okd.io) container build features, deployed using generic [Helm](https://github.com/helm/helm) charts, organised into high level releases using [Helmfile](https://github.com/roboll/helmfile), properly encrypted into git,  using simple bash scripts, called by [adnanh/webhook](https://github.com/adnanh/webhook). OCD provides strong conventions and generic building blocks that can deliver "application infrastructure as code" with complete git driven automation. 
 
 See [the wiki](https://github.com/ocd-scm/ocd-meta/wiki) for more details including how to run the demo on either minishift or openshift online pro.
 
