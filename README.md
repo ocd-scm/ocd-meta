@@ -13,7 +13,7 @@ Using those to simple primatives gives:
  * History of the deployed versions of applications with the ability to rollback to prior versions.
  * History of the configuration within each environment with the ability to rollback to prior versions.
  
-OCD uses high level [OKD](https://www.okd.io) container build features, deployed using generic Helm charts, using simple bash scripts, called by [adnanh/webhook](https://github.com/adnanh/webhook). OCD provides strong conventions and generic building blocks that can deliver "application infrastructure as code" with complete git driven automation. 
+OCD uses high level [OKD](https://www.okd.io) container build features, deployed using generic [Helm](https://github.com/helm/helm) charts, organised into high level releases using [Helmfile](https://github.com/roboll/helmfile), properly encrypted into git,  using simple bash scripts, called by [adnanh/webhook](https://github.com/adnanh/webhook). OCD provides strong conventions and generic building blocks that can deliver "application infrastructure as code" with complete git driven automation. 
 
 See [the wiki](https://github.com/ocd-scm/ocd-meta/wiki) for more details including how to run the demo on either minishift or openshift online pro.
 
@@ -24,9 +24,9 @@ The sequence diagram gives above an overview of how pushing changes to one or mo
 * Release or update many `ConfigMaps` that can configure deployments or builds
 * Release or update many `Secrets` that can configure deployments. The contents of the secrets are encrypted in git using either the helm secrets plugin or git-secret. 
 * Release or update many `DeploymentConfigs` that run any 12factor.net app that is configured using `ConfigMaps` and `Secrets`
-* Release or update many `BuildConfig` that watch for git tags in your microservice code repos then build that tag and tag the resultant container image with the same tag. You can then use the same tags in helmfile yaml that configures you deployments in all your environments. 
+* Release or update many `BuildConfig` that watch for git tags in your microservice code repos then build that tag and tag the resultant container image with the same tag. You can then use the same tags in helmfile yaml that configures your deployments in all your environments. 
 
-Since OCD builds and promotes your code based on git tags it can fully manage your deployments based on git tags. You can keep on using whatever branch strategies you want and whatever continuous integration and testing build system you like. When you are happy to release just tag your code to build a container in openshift with that code then change the helmfile.yaml to run and configure that code in each openshift environment. 
+Since OCD builds and promotes your code based on git tags it can fully manage your deployments based on git tags. You can keep on using whatever branch strategies you want and whatever continuous build and test  system you like. When you are happy to release just tag your code. OCD will create a container image containing the tagged code and tag that container image with the git tag. Then you just put that tag number in the helmfile.yaml in the git repo that defines all the config for a given environment and OCD will update the environment to run that code. 
 
 ## Support Origin Versions
 
