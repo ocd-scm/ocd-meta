@@ -41,4 +41,4 @@ See [the wiki](https://github.com/ocd-scm/ocd-meta/wiki) for more details.
 
 ## Status
 
-Thefirst milestone release `1.0.0-M1` is now out which runs the demo tutorial on the wiki on both openshift online pro and minishift. From how on we will be following semver convensions. There will be `1.0.0-SNAPSHOT` releases until we have upgraded all our environments to use OCD. Once all our environments are serving our customers I will cut a `1.0.0` release. 
+The first milestone release `1.0.0-M1` is now out which runs the demo tutorial on the wiki on both openshift online pro and minishift. From how on we will be following semver convensions. There will be `1.0.0-SNAPSHOT` releases until we have upgraded all our environments to use OCD. Once all our environments are serving our customers I will cut a `1.0.0` release. 
