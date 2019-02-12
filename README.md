@@ -9,7 +9,7 @@ It can:
 
 Using those to simple primatives gives:
 
- * Deployment of a specific verion of one or more applications by simply applying git tags to simple yaml files.
+ * Containers with tags that match your git tags that can be moved into environmnets by pushing single line changs to yaml files. 
  * History of the deployed versions of applications with the ability to rollback to prior versions.
  * History of the configuration within each environment with the ability to rollback to prior versions.
  
