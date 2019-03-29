@@ -15,6 +15,8 @@ Using those to simple primatives gives:
  
 OCD uses high level [OKD](https://www.okd.io) container build features, deployed using generic [Helm](https://github.com/helm/helm) charts, organised into high level releases using [Helmfile](https://github.com/roboll/helmfile), properly encrypted into git,  using simple bash scripts, called by [adnanh/webhook](https://github.com/adnanh/webhook). OCD provides strong conventions and generic building blocks that can deliver "application infrastructure as code" with complete git driven automation. 
 
+OCD is also chatbot friendly. We use a botkit slackbot that creates git releases and PRs to upgrade apps. This means team members who are not developers can move the code they tested into production. This is known as ChatOps.
+
 See [the wiki](https://github.com/ocd-scm/ocd-meta/wiki) for more details including how to run the demo on either minishift or openshift online pro.
 
 ![ocd environment sequence diagram](https://ocd-scm.github.io/ocd-meta/imgs/ocd-environment-sequence.png)
