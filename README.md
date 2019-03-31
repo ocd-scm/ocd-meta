@@ -15,6 +15,8 @@ Using those to simple primatives gives:
  
 OCD uses high level [OKD](https://www.okd.io) container build features, deployed using generic [Helm](https://github.com/helm/helm) charts, organised into high level releases using [Helmfile](https://github.com/roboll/helmfile), properly encrypted into git,  using simple bash scripts, called by [adnanh/webhook](https://github.com/adnanh/webhook). OCD provides strong conventions and generic building blocks that can deliver "application infrastructure as code" with complete git driven automation. 
 
+OCD is also chatbot friendly. We use a botkit slackbot that creates git releases and PRs to upgrade apps. This means team members who are not developers can move the code they tested into production. This is known as ChatOps.
+
 See [the wiki](https://github.com/ocd-scm/ocd-meta/wiki) for more details including how to run the demo on either minishift or openshift online pro.
 
 ![ocd environment sequence diagram](https://ocd-scm.github.io/ocd-meta/imgs/ocd-environment-sequence.png)
@@ -41,4 +43,4 @@ See [the wiki](https://github.com/ocd-scm/ocd-meta/wiki) for more details.
 
 ## Status
 
-The first milestone release `1.0.0-M1` is now out which runs the demo tutorial on the wiki on both openshift online pro and minishift. From how on we will be following semver convensions. There will be `1.0.0-SNAPSHOT` releases until we have upgraded all our environments to use OCD. Once all our environments are serving our customers I will cut a `1.0.0` release. 
+The first milestone release `1.0.0-M1` is now out which runs the demo tutorial on the wiki on both openshift online pro and minishift. There will be `1.0.0-SNAPSHOT` releases until we have finished the cut-over of our live apps tbat are currently parallel running on OCD. The current focus is on getting chatbot notifications working to inprove thr DX (developer experience). 
