@@ -43,4 +43,4 @@ See [the wiki](https://github.com/ocd-scm/ocd-meta/wiki) for more details.
 
 ## Status
 
-The first milestone release `1.0.0-M1` is now out which runs the demo tutorial on the wiki on both openshift online pro and minishift. We have now cutover over more than half of our production applications at uniqkey.eu onto OCD. The current focus is on migrating the remaining applications and fixing a few small issues before cutting the 1.0.0 release. 
+The first milestone release `1.0.0-M1` is now out which runs the demo tutorial on the wiki on both openshift online pro and minishift. We have now cutover over more than half of our production applications at uniqkey.eu onto OCD. The current focus is on migrating the remaining applications and fixing a few small issues before cutting the 1.0.0 release. There is a tracker ticket for our [1.0.0 release](https://github.com/ocd-scm/ocd-meta/issues/2)
