@@ -30,6 +30,17 @@ The sequence diagram gives above an overview of how pushing changes to one or mo
 
 Since OCD builds and promotes your code based on git tags it can fully manage your deployments based on git tags. You can keep on using whatever branch strategies you want and whatever continuous build and test  system you like. When you are happy to release just tag your code. OCD will create a container image containing the tagged code and tag that container image with the git tag. Then you just put that tag number in the helmfile.yaml in the git repo that defines all the config for a given environment and OCD will update the environment to run that code. 
 
+## This Repo
+
+This repo is used to publish the Helm charts that OCD uses to install webook handlers, secrets and generic s2i builders. You can use any 3rd party helm charts with OCD. You may find it convenient to use the OCD charts if you run 12factor apps. You don't need to use s2i to build your containers. The OCD builder charts are simply provided to make it easy to build containers from git release tags that are tagged with the same tag if you want to do that. You can use whatever CI build tool you want that can run in parallel to OCD. 
+
+This repo also hosts the main wiki that documents how to use all the OCD components that are within the same GitHub organisation.
+
+## Status
+
+We have cut over two thirds of our production apps onto OCD and have released v1.0.0 of the charts. 🍾
+
+
 ## Support Origin Versions
 
 We test on: 
@@ -40,6 +51,3 @@ We test on:
 Online Pro is a multi-tenant set up with no admin access for tenants. As we test there we can expect OCD to work fine with any less locked down OKD or RCP on-prem, dedicated or managed cluster. 
  
 See [the wiki](https://github.com/ocd-scm/ocd-meta/wiki) for more details. 
-## Status
-
-We have cut over two thirds of our production apps onto OCD and have released v1.0.0 of the charts. 🍾
