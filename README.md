@@ -49,5 +49,7 @@ We test on:
  * Openshift Online Pro which periodically updates which version of Red Hat OpenShift Container Platform it is running. The techniques used by OCD were perfected running a business on openshift.com.
  
 Online Pro is a multi-tenant set up with no admin access for tenants. As we test there we can expect OCD to work fine with any less locked down OKD or RCP on-prem, dedicated or managed cluster. 
- 
-See [the wiki](https://github.com/ocd-scm/ocd-meta/wiki) for more details. 
+
+## Getting Started
+
+The [wiki](https://github.com/ocd-scm/ocd-meta/wiki) has tutorials of setting up a ReactJS demo app on both minishift and openshift online pro.
