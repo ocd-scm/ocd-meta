@@ -38,7 +38,7 @@ This repo also hosts the main wiki that documents how to use all the OCD compone
 
 ## Status
 
-We have cut over two thirds of our production apps onto OCD and have released v1.0.0 of the charts. 🍾
+We have cut over all of our production apps onto OCD and have released v1.0.0 of the charts. 🍾
 
 
 ## Support Origin Versions
