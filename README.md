@@ -1,6 +1,6 @@
 # Origin Continuous Deployment (OCD) - Git driven DevOps on Origin
 
-Origin Continuous Deployment (OCD) is tooling to build, configure and repeatably deploy applications on [Origin Kubernetes Distribution](https://okd.io) and [Red Hat OpenShift](https://www.openshift.com) driven by git webhooks. OCD lets you live the dream of self-service immutable infrastruture as code running on Kubernetes. 
+Origin Continuous Deployment (OCD) is bash tooling and helm packages to build, configure and repeatably deploy applications on [Origin Kubernetes Distribution](https://okd.io) and [Red Hat OpenShift](https://www.openshift.com) driven by git webhooks. OCD lets you live the dream of self-service infrastruture as code running on Kubernetes. The public repos in the ocd-scm organisation are all of the tools that uniqkey.eu uses to run its business on OpenShift Online Pro running in Amazon AWS. 
 
 It can:
 
@@ -38,7 +38,7 @@ This repo also hosts the main wiki that documents how to use all the OCD compone
 
 ## Status
 
-We have cut over two thirds of our production apps onto OCD and have released v1.0.0 of the charts. 🍾
+We have cut over all of our production apps onto OCD and have released v1.0.0 of the charts. 🍾
 
 
 ## Support Origin Versions
@@ -49,5 +49,7 @@ We test on:
  * Openshift Online Pro which periodically updates which version of Red Hat OpenShift Container Platform it is running. The techniques used by OCD were perfected running a business on openshift.com.
  
 Online Pro is a multi-tenant set up with no admin access for tenants. As we test there we can expect OCD to work fine with any less locked down OKD or RCP on-prem, dedicated or managed cluster. 
- 
-See [the wiki](https://github.com/ocd-scm/ocd-meta/wiki) for more details. 
+
+## Getting Started
+
+The [wiki](https://github.com/ocd-scm/ocd-meta/wiki) has tutorials of setting up a ReactJS demo app on both minishift and openshift online pro.
