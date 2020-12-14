@@ -132,7 +132,7 @@ entries:
     - https://github.com/ocd-scm/ocd-builder
     urls:
     - https://ocd-scm.github.io/ocd-meta/charts/ocd-deployer-1.2.0-SNAPSHOT.tgz
-    version: 1.2.0
+    version: 1.2.0-SNAPSHOT
   - apiVersion: v1
     created: "2020-12-14T16:39:45.014971Z"
     description: Generic openshift deployer
